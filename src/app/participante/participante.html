@@ -1,0 +1,13 @@
+<h2>{{ evento.titulo }}</h2>
+<p>{{ evento.data | date:'dd/MM/yyyy' }} · {{ evento.data | diasPara }}</p>
+
+@for (p of participantes; track p.id) {
+  <div class="participante">
+    <span class="avatar">{{ p.descricao | iniciais }}</span>
+    <b>{{ p.descricao }}</b>
+    <span>{{ p.telefone | telefone }}</span>
+    <span>{{ p.formaPagamento | formaPagamento }}</span>
+  </div>
+} @empty {
+  <p>Nenhum participante neste evento.</p>
+}

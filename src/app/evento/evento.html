@@ -1,0 +1,13 @@
+<h2>Eventos</h2>
+
+@for (e of eventos; track e.id) {
+  <article class="cartao">
+    <h3>{{ e.titulo }}</h3>
+    <p>{{ e.data | date:'dd/MM/yyyy' }}</p>
+    <p>{{ e.data | date:"EEEE, d 'de' MMMM" }}</p>
+    <p>{{ e.local | uppercase }}</p>
+    <small>{{ e.vagas | number }} vagas</small>
+  </article>
+} @empty {
+  <p>Nenhum evento cadastrado.</p>
+}
