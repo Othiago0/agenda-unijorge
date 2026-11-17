@@ -2,7 +2,7 @@
 
 @for (e of eventos; track e.id) {
   <article class="cartao">
-    <h3>{{ e.titulo }}</h3>
+    <h3>{{ e.titulo | titulo }}</h3>
     <p>{{ e.data | date:'dd/MM/yyyy' }}</p>
     <p>{{ e.data | date:"EEEE, d 'de' MMMM" }}</p>
     <p>{{ e.local | uppercase }}</p>
