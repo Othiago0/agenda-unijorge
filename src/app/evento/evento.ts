@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { DatePipe, DecimalPipe, UpperCasePipe } from '@angular/common';
 import { Evento as EventoModel } from './evento.model';
 import { TituloPipe } from '../pipes/titulo-pipe';
-import { ResumoPipe } from '../pipes/resumo-pipe';
+
 
 @Component({
   selector: 'app-evento',
-  imports: [DatePipe, UpperCasePipe, DecimalPipe, TituloPipe, ResumoPipe],
+  imports: [DatePipe, UpperCasePipe, DecimalPipe, TituloPipe],
   templateUrl: './evento.html',
   styleUrl: './evento.css'
 })
