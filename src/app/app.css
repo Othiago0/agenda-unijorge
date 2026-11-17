@@ -1,3 +1,21 @@
-nav a.ativo{
+nav {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d3dbe4;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1d5aa8;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.ativo {
     font-weight: bold;
+    border-bottom: 2px solid #1d5aa8;
 }

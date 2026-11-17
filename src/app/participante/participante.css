@@ -1,8 +1,9 @@
-.participante{
-    display: flex;
+.participante {
+    display: grid;
+    grid-template-columns: 36px 1fr 150px 150px;
     align-items: center;
     gap: 12px;
-    border: 1px solid black;
+    border: 1px solid #d3dbe4;
     padding: 10px 16px;
     margin-bottom: 10px;
     max-width: 700px;
@@ -10,7 +11,7 @@
     background-color: #f5f5f5;
 }
 
-.avatar{
+.avatar {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -20,5 +21,4 @@
     background-color: #1d5aa8;
     color: white;
     font-weight: bold;
-    flex: none;
 }
